@@ -1,0 +1,9 @@
+.grid-divider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: auto;
+}
+p {
+    margin: 0;
+}

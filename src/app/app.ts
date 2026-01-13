@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LoginAtlasEnterprise } from "./features/login/login";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
+  selector: 'main-atlas-enterprise-managment-platform',
+  imports: [ LoginAtlasEnterprise],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
