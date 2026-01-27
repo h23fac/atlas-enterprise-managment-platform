@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './atlas-button-confirm.scss',
 })
 export class AtlasButtonConfirm {
-
+  nameButton:string = 'Login' 
 }

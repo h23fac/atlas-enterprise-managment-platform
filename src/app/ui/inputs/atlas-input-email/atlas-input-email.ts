@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './atlas-input-email.scss',
 })
 export class AtlasInputEmail {
-
+  nameInput: string = 'Email *';
 }

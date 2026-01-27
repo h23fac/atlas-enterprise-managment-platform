@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { LoginAtlasEnterprise } from "./features/login/login";
+import { LoginAtlasEnterprise } from './features/login/login';
 
 @Component({
   selector: 'main-atlas-enterprise-managment-platform',
-  imports: [ LoginAtlasEnterprise],
+  imports: [LoginAtlasEnterprise],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   protected readonly title = signal('atlas-enterprise-managment-platform');
