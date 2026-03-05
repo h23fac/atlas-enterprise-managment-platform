@@ -1,16 +1,21 @@
-import { Component, } from '@angular/core';
-import { AtlasInputEmail } from "../../ui/inputs/atlas-input-email/atlas-input-email";
-import { AtlasInputPwd } from "../../ui/inputs/atlas-input-pwd/atlas-input-pwd";
-import { AtlasButtonConfirm } from "../../ui/buttons/atlas-button-confirm/atlas-button-confirm";
-
-
-
+import { Component } from '@angular/core';
+import { AtlasInputs } from '../../ui/inputs/atlas-inputs/atlas-inputs';
+import { AtlasButtons } from '../../ui/buttons/atlas-buttons/atlas-buttons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login-atlas-enterprise',
-  imports: [AtlasInputEmail, AtlasInputPwd, AtlasButtonConfirm],
+  imports: [AtlasInputs, AtlasButtons],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })
 export class LoginAtlasEnterprise {
+  constructor(private router: Router) {
+  }
+
+  onSubmit() {
+    console.log('redirect without B.E')
+    this.router.navigate(['/atlas-dashboard']);
+  }
+
 }

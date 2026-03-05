@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AtlasInputPwd } from './atlas-input-pwd';
+import { AtlasLinks } from './atlas-links';
 
-describe('AtlasInputPwd', () => {
-  let component: AtlasInputPwd;
-  let fixture: ComponentFixture<AtlasInputPwd>;
+describe('AtlasLinks', () => {
+  let component: AtlasLinks;
+  let fixture: ComponentFixture<AtlasLinks>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AtlasInputPwd]
+      imports: [AtlasLinks]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AtlasInputPwd);
+    fixture = TestBed.createComponent(AtlasLinks);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

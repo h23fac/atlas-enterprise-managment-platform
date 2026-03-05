@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AtlasButtonConfirm } from './atlas-button-confirm';
+import { AtlasInputs } from './atlas-inputs';
 
-describe('AtlasButtonConfirm', () => {
-  let component: AtlasButtonConfirm;
-  let fixture: ComponentFixture<AtlasButtonConfirm>;
+describe('AtlasInputs', () => {
+  let component: AtlasInputs;
+  let fixture: ComponentFixture<AtlasInputs>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AtlasButtonConfirm]
+      imports: [AtlasInputs]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AtlasButtonConfirm);
+    fixture = TestBed.createComponent(AtlasInputs);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

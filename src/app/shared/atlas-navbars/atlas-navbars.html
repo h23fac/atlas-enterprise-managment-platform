@@ -1,0 +1,5 @@
+<nav>
+    @for (link of links; track link) {
+    <atlas-links [nameLink]="link.label" [navigationLink]="link.navigations"></atlas-links>
+    }
+</nav>

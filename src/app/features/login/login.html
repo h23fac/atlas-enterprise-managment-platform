@@ -1,17 +1,16 @@
 <div class="divider-login">
   <section class="presentation-lms-title cards">
     <!--Here should be exist a little description about Atlas LMS-->
-    <p>Iniciar sesion en Atlas LMS</p>
-    <span>Manten el orden en tu empresa </span>
+    <p>Iniciar sesion en Atlas LMS <br> Manten el orden en tu empresa </p>
   </section>
   <section class="presentation-lms-form cards">
     <!--Here should exist thew little form with redirection to principal page or dashboard-->
       <div>
-        <form class="" action="">
+        <form (ngSubmit)="onSubmit()">
           <h2>Login</h2>
-          <atlas-input-email></atlas-input-email>
-          <atlas-input-pwd></atlas-input-pwd>
-          <atlas-button-confirm></atlas-button-confirm>
+          <atlas-inputs nameInput="Email" typeInput="Email"></atlas-inputs>
+          <atlas-inputs nameInput="Password" typeInput="Password"></atlas-inputs>
+          <atlas-buttons (click)="onSubmit()" typeButton="submit" nameButton="Login"></atlas-buttons>
         </form>
       </div>
   </section>
